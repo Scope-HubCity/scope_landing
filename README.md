@@ -1,67 +1,38 @@
 # SCoPE
 
-Landing page de **SCoPE (Sorting & Collecting Plastics in our Environment)**, une solution togolaise dédiée à la collecte, au tri et au recyclage des déchets plastiques à Lomé.
+Landing page React + TypeScript de **SCoPE (Sorting & Collecting Plastics in our Environment)**, une solution togolaise dédiée à la collecte, au tri et au recyclage des déchets plastiques à Lomé.
 
-## Fonctionnalités
+## Stack
 
-- Présentation de la mission de SCoPE
-- Mise en avant de l'application mobile avec `screenshot-app.png`
-- Présentation du problème des déchets plastiques à Lomé
-- Parcours de collecte en 5 étapes
-- Liste des fonctionnalités de l'application
-- Statistiques animées avec un compteur JavaScript
-- Menu responsive pour les écrans mobiles
-- Liens vers les réseaux sociaux de SCoPE
+- React et TypeScript
+- Vite
+- Lucide React pour les icônes
+- CSS responsive avec Google Fonts
 
-## Technologies
+## Développement
 
-- HTML5
-- CSS3
-- JavaScript vanilla
-- Google Fonts : Poppins et Inter
-- Font Awesome 6.5.1
+```bash
+npm install
+npm run dev
+```
 
-## Structure du projet
+Le site est ensuite disponible sur l'URL affichée par Vite, généralement `http://localhost:5173`.
+
+## Build de production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Structure
 
 ```text
 scope_landing/
-├── index.html
-├── assets/
-│   ├── screenshot-app.png
-│   └── downloads/
-│       └── logo.jpg
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── README.md
+├── public/assets/       # Logo et capture de l'application
+├── src/App.tsx          # Sections, contenu et interactions React
+├── src/styles.css       # Design responsive
+├── src/main.tsx         # Montage de l'application
+├── package.json
+└── vite.config.ts
 ```
-
-## Lancer le projet
-
-Le projet ne nécessite aucune installation de dépendances.
-
-### Option 1 : ouvrir directement le fichier
-
-Ouvrir `index.html` dans un navigateur web.
-
-### Option 2 : utiliser un serveur local
-
-Depuis le dossier du projet, lancer par exemple :
-
-```bash
-python -m http.server 8000
-```
-
-Puis ouvrir [http://localhost:8000](http://localhost:8000).
-
-## Personnalisation
-
-- Modifier le contenu et les sections dans `index.html`.
-- Modifier les couleurs, espacements et responsive design dans `css/style.css`.
-- Modifier le menu mobile et les compteurs dans `js/script.js`.
-- Remplacer les visuels dans `assets/` en conservant les chemins utilisés dans `index.html`.
-
-## Compatibilité
-
-La page est conçue pour fonctionner sur les navigateurs modernes et s'adapte aux écrans desktop, tablette et mobile.
